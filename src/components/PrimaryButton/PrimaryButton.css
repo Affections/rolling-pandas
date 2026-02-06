@@ -1,0 +1,26 @@
+/* Primary button — gradient, stroke, two shadows */
+
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 24px 14px 18px;
+  background: linear-gradient(180deg, #ffffff 0%, #f4f4f4 100%);
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  font-family: var(--font-aktiv-grotesk);
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow:
+    0 0 0 2px #e7e7e7,
+    0 4px 7px -5px rgba(0, 0, 0, 0.12);
+  transition: opacity 0.2s;
+}
+
+.primary-button:hover {
+  opacity: 0.95;
+}

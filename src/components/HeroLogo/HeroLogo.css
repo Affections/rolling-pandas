@@ -1,0 +1,15 @@
+/* Logo — bottom left of hero, on top of all elements */
+.hero-logo {
+  position: absolute;
+  left: 55px;
+  bottom: 55px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.hero-logo img {
+  display: block;
+  width: 178px;
+  height: 42px;
+  object-fit: contain;
+}

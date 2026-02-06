@@ -1,0 +1,17 @@
+/* Shopify Partners badge — bottom right of hero, on top of all elements */
+.hero-shopify-badge {
+  position: absolute;
+  right: 55px;
+  bottom: 55px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.hero-shopify-badge__image {
+  display: block;
+  width: auto;
+  max-width: 220px;
+  height: 44px;
+  object-fit: contain;
+  object-position: right bottom;
+}

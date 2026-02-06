@@ -1,0 +1,41 @@
+/* Why section — max-width 1440px, padding 56px sides, padding-top 145px */
+.why-section {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 56px;
+  padding-right: 56px;
+  padding-top: 145px;
+  padding-bottom: 80px;
+}
+
+.why-section__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 62px;
+}
+
+.why-section__title {
+  font-family: var(--font-fraunces), serif;
+  font-size: 48px;
+  line-height: 100%;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.57);
+}
+
+.why-section__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 46px;
+  width: 100%;
+}
+
+.why-section__box {
+  min-height: 120px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+}

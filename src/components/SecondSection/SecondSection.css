@@ -1,0 +1,47 @@
+/* Second section — max-width 1440px, padding 56px sides */
+.second-section {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 48px 56px;
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+.second-section__inner {
+  display: flex;
+  align-items: center;
+  gap: 146px;
+}
+
+.second-section__text {
+  font-family: var(--font-fraunces), serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  color: #fff;
+  margin: 0;
+  flex-shrink: 0;
+  max-width: 188px;
+}
+
+.second-section__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  align-items: center;
+  flex: 1;
+  min-width: 0;
+}
+
+.second-section__grid-item {
+  min-width: 0;
+}
+
+.second-section__img {
+  width: 100% !important;
+  height: auto !important;
+  object-fit: contain;
+  display: block;
+}

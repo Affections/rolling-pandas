@@ -1,0 +1,24 @@
+/* Shopify-style sticky canvas wrapper */
+.hero-canvas-wrapper {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: -100vh;
+  overflow: clip;
+  pointer-events: auto;
+}
+
+.hero-canvas-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero-canvas-inner canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}

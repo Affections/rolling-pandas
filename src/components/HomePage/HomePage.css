@@ -1,0 +1,36 @@
+/* Hero section — mouse parallax bg + 1440px content */
+
+.home {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Content layer */
+.home__content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  max-width: 1134px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: none;
+  padding: 166px 24px 0;
+  box-sizing: border-box;
+  pointer-events: none;
+  display: flex;
+  align-items: flex-start;
+}
+
+.home__content * {
+  pointer-events: auto;
+}
+
+@media (max-width: 768px) {
+  .home__content {
+    padding: 0 16px;
+  }
+}

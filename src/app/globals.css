@@ -1,0 +1,55 @@
+/* Aktiv Grotesk: create a Web Project at fonts.adobe.com, get your kit URL, then uncomment and replace YOUR_KIT_ID:
+   @import url("https://use.typekit.net/YOUR_KIT_ID.css");
+*/
+:root {
+  --background: #000000;
+  --foreground: #B1BC99;
+  --font-aktiv-grotesk: "Aktiv Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  overscroll-behavior: none;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-salmanazar), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  touch-action: pan-y;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Ensure svh unit support fallback */
+@supports not (height: 100svh) {
+  main {
+    height: 100vh !important;
+  }
+}
+
+/* Hide scrollbars */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
