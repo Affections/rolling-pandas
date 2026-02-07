@@ -225,7 +225,6 @@
   line-height: 100%;
   color: #0a0909;
   margin: 0;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.57);
 }
 
 .projects-popup__desc {
@@ -235,7 +234,6 @@
   font-size: 16px;
   line-height: 145%;
   color: #2f2f2f;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .projects-popup__badge {
@@ -254,7 +252,6 @@
   font-size: 16px;
   line-height: 145%;
   color: #2f2f2f;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .projects-popup__quote {
@@ -264,7 +261,6 @@
   font-size: 16px;
   line-height: 145%;
   color: #2f2f2f;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .projects-popup__testimonial {

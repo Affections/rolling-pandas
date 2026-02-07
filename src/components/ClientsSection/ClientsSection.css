@@ -28,7 +28,6 @@
   line-height: 100%;
   color: #0a0909;
   margin: 0;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.57);
 }
 
 .clients-section__title-accent {
@@ -43,15 +42,14 @@
   font-size: 16px;
   line-height: 145%;
   color: #2f2f2f;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Thumbnail grid */
 .clients-section__grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  display: flex;
   gap: 10px;
   margin-top: 36px;
+  justify-content: center;
 }
 
 .clients-section__thumb {
@@ -62,6 +60,7 @@
   border: none;
   background: none;
   cursor: pointer;
+  max-width: 56px;
   transition: box-shadow 0.2s;
 }
 
@@ -194,7 +193,6 @@
   font-size: 20px;
   line-height: 145%;
   color: #2f2f2f;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .clients-section__quote em {
