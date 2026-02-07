@@ -6,7 +6,7 @@ export default function WhySection() {
   return (
     <section className="why-section">
       <div className="why-section__inner">
-        <h2 className="why-section__title">Why brands choose Rolling Pandas</h2>
+        <h2 className="why-section__title">Why brands <span className="why-section__title-accent">choose</span> Rolling Pandas</h2>
         <div className="why-section__grid">
           <div className="why-section__box why-section__box--1">
             <div className="why-section__glow" aria-hidden />
@@ -36,9 +36,19 @@ export default function WhySection() {
               </p>
             </div>
           </div>
-          <div className="why-section__box">
+          <div className="why-section__box why-section__box--3">
             <div className="why-section__glow" aria-hidden />
             <div className="why-section__box-bg" aria-hidden />
+            <div className="why-section__box-content">
+              <h3 className="why-section__box-title">
+                Enterprise-
+                <br />
+                level quality
+              </h3>
+              <p className="why-section__box-desc">
+                Senior Shopify execution with performance, UX, and technical SEO baked in.
+              </p>
+            </div>
           </div>
         </div>
       </div>

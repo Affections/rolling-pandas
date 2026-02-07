@@ -8,6 +8,7 @@
   padding-right: 56px;
   padding-top: 145px;
   padding-bottom: 145px;
+  background: #0a0909;
 }
 
 .why-section__inner {
@@ -27,6 +28,11 @@
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.57);
 }
 
+.why-section__title-accent {
+  color: #8e6df0;
+  font-style: italic;
+}
+
 .why-section__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -37,7 +43,7 @@
 .why-section__box {
   position: relative;
   height: 428px;
-  border-radius: 8px;
+  border-radius: 15px;
   overflow: hidden;
 }
 
@@ -68,7 +74,6 @@
   line-height: 110%;
   color: #0a0909;
   margin: 0;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.57);
 }
 
 .why-section__box-desc {
@@ -79,7 +84,6 @@
   line-height: 145%;
   color: #0a0909;
   margin: 0;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .why-section__glow {
@@ -114,7 +118,7 @@
 }
 
 .why-section__box--1 .why-section__box-bg {
-  border-radius: 8px;
+  border-radius: 15px;
   background-color: transparent;
   background-image: url('/why-box-1.png');
   background-position: right bottom;
@@ -123,9 +127,18 @@
 }
 
 .why-section__box--2 .why-section__box-bg {
-  border-radius: 8px;
+  border-radius: 15px;
   background-color: transparent;
   background-image: url('/why-box-2.png');
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.why-section__box--3 .why-section__box-bg {
+  border-radius: 15px;
+  background-color: transparent;
+  background-image: url('/why-box-3.png');
   background-position: right bottom;
   background-size: contain;
   background-repeat: no-repeat;

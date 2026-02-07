@@ -32,7 +32,6 @@
   line-height: 100%;
   color: #0a0909;
   margin: 0;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.57);
 }
 
 .projects-section__title-accent {
@@ -48,7 +47,6 @@
   line-height: 145%;
   color: #2f2f2f;
   margin: 10px 0 0;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 .projects-section__btn--dark {
@@ -117,22 +115,22 @@
 
 .projects-section__slide-title {
   margin-top: 18px;
+  margin-bottom: 0;
   font-family: var(--font-fraunces), serif;
   font-weight: 600;
   font-size: 32px;
   line-height: 100%;
   color: #0a0909;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.57);
 }
 
 .projects-section__slide-desc {
   margin-top: 12px;
+  margin-bottom: 0;
   font-family: var(--font-aktiv-grotesk);
   font-weight: 500;
   font-size: 16px;
   line-height: 145%;
   color: #2f2f2f;
-  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Popup — 18px from top and bottom, fixed, width 100% */

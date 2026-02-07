@@ -23,18 +23,21 @@ export default function HomePage() {
     mouseRef.current = { x, y };
   }, []);
 
-  const onMouseMoveGlobal = useCallback((e: MouseEvent) => {
-    const w = window.innerWidth;
-    const h = window.innerHeight;
-    const x = (e.clientX / w) * 2 - 1;
-    const y = -((e.clientY / h) * 2 - 1);
-    mouseRef.current = { x, y };
-  }, []);
-
   useEffect(() => {
-    window.addEventListener('mousemove', onMouseMoveGlobal);
-    return () => window.removeEventListener('mousemove', onMouseMoveGlobal);
-  }, [onMouseMoveGlobal]);
+    const handler = (e: MouseEvent) => {
+      const w = window.innerWidth;
+      const h = window.innerHeight;
+      const x = (e.clientX / w) * 2 - 1;
+      const y = -((e.clientY / h) * 2 - 1);
+      mouseRef.current = { x, y };
+    };
+    window.addEventListener('mousemove', handler, { passive: true });
+    document.addEventListener('mousemove', handler, { passive: true });
+    return () => {
+      window.removeEventListener('mousemove', handler);
+      document.removeEventListener('mousemove', handler);
+    };
+  }, []);
 
   return (
     <>
