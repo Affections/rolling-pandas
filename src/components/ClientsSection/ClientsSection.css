@@ -1,0 +1,232 @@
+/* Clients section — full-width bg #F4F4F4 */
+.clients-section {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: #f4f4f4;
+  padding-top: 100px;
+  padding-bottom: 145px;
+}
+
+.clients-section__inner {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 56px;
+}
+
+/* Header — centered, max-width 490px */
+.clients-section__header {
+  max-width: 490px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.clients-section__title {
+  font-family: var(--font-fraunces), serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 100%;
+  color: #0a0909;
+  margin: 0;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.57);
+}
+
+.clients-section__title-accent {
+  font-style: italic;
+  color: #0a0909;
+}
+
+.clients-section__intro {
+  margin-top: 10px;
+  font-family: var(--font-aktiv-grotesk);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 145%;
+  color: #2f2f2f;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Thumbnail grid */
+.clients-section__grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin-top: 36px;
+}
+
+.clients-section__thumb {
+  aspect-ratio: 1;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.clients-section__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.clients-section__thumb--active {
+  box-shadow: 0 2px 8.5px 3px rgba(142, 109, 240, 1);
+}
+
+/* Slider wrap with fade overlays */
+.clients-section__slider-wrap {
+  position: relative;
+  margin-top: 36px;
+  overflow: hidden;
+}
+
+.clients-section__fade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 120px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.clients-section__fade--left {
+  left: 0;
+  background: linear-gradient(to right, #f4f4f4 0%, rgba(244, 244, 244, 0) 100%);
+}
+
+.clients-section__fade--right {
+  right: 0;
+  background: linear-gradient(to left, #f4f4f4 0%, rgba(244, 244, 244, 0) 100%);
+}
+
+/* Swiper */
+.clients-section__swiper {
+  padding: 20px 0;
+}
+
+.clients-section__swiper .swiper-slide {
+  width: 874px;
+  max-width: 90vw;
+}
+
+.clients-section__card {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 12px;
+  width: 100%;
+  max-width: 874px;
+}
+
+.clients-section__card-img-wrap {
+  width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  aspect-ratio: 300 / 400;
+}
+
+.clients-section__card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.clients-section__card-content {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px;
+  min-width: 0;
+}
+
+.clients-section__card-header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.clients-section__author {
+  flex-shrink: 0;
+}
+
+.clients-section__author-name {
+  font-family: var(--font-fraunces), serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  color: #0a0909;
+  margin: 0;
+}
+
+.clients-section__author-role {
+  margin-top: 10px;
+  font-family: var(--font-fraunces), serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  color: #676767;
+  margin: 10px 0 0;
+}
+
+.clients-section__card-divider {
+  width: 1px;
+  height: 100%;
+  min-height: 48px;
+  background: #dddddd;
+  margin: 0 20px;
+  flex-shrink: 0;
+}
+
+.clients-section__card-logo {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.clients-section__quote {
+  margin-top: 30px;
+  font-family: var(--font-aktiv-grotesk);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 145%;
+  color: #2f2f2f;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.clients-section__quote em {
+  font-style: italic;
+  color: #6b33ea;
+}
+
+.clients-section__btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 28px;
+  margin-top: 14px;
+  margin-left: auto;
+  padding: 7.5px 6px;
+  background: #2f2f2f;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-family: var(--font-aktiv-grotesk);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.01px;
+  color: #f4f4f4;
+  transition: opacity 0.2s;
+}
+
+.clients-section__btn:hover {
+  opacity: 0.9;
+}
+
+.clients-section__btn-text {
+  flex-shrink: 0;
+}

@@ -1,18 +1,15 @@
-/* Projects section — max-width 1440px, padding-left 56px */
+/* Projects section — full viewport bg #F4F4F4, content max-width 1440px */
 .projects-section {
-  width: 100%;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 56px;
-  padding-right: 56px;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background: #fff;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  background: #f4f4f4;
 }
 
 .projects-section__inner {
-  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 80px 56px;
 }
 
 /* Header — flex horizontal end to end */

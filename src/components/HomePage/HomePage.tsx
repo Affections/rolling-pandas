@@ -8,6 +8,8 @@ import SecondSection from '@/components/SecondSection/SecondSection';
 import WhySection from '@/components/WhySection/WhySection';
 import HowWeWorkSection from '@/components/HowWeWorkSection/HowWeWorkSection';
 import ProjectsSection from '@/components/ProjectsSection/ProjectsSection';
+import ClientsSection from '@/components/ClientsSection/ClientsSection';
+import PartnerSection from '@/components/PartnerSection/PartnerSection';
 
 export default function HomePage() {
   const mouseRef = useRef({ x: 0, y: 0 });
@@ -46,6 +48,8 @@ export default function HomePage() {
       <WhySection />
       <HowWeWorkSection mouseRef={mouseRef} />
       <ProjectsSection />
+      <ClientsSection />
+      <PartnerSection />
     </>
   );
 }
